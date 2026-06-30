@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(contactForm);
             
             // Post data to FormSubmit API (AJAX mode)
-            fetch('https://formsubmit.co/ajax/surajkhuntia686@gmail.com', {
+            fetch('https://formsubmit.co/ajax/surajkhuntia1206@gmail.com', {
                 method: 'POST',
                 body: formData
             })
