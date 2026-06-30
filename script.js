@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateActiveNav);
 
     // ==========================================================================
-    // Contact Form Real Submission (Web3Forms)
+    // Contact Form Real Submission (FormSubmit.co)
     // ==========================================================================
     const contactForm = document.getElementById('contact-form');
     const formFeedback = document.getElementById('form-feedback');
@@ -154,15 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Check if Access Key is still the placeholder
-            const accessKeyInput = contactForm.querySelector('input[name="access_key"]');
-            if (accessKeyInput && accessKeyInput.value === 'YOUR_ACCESS_KEY_HERE') {
-                formFeedback.textContent = 'Setup Required: Please add your free Web3Forms access key to the input element in index.html.';
-                formFeedback.className = 'form-feedback error';
-                formFeedback.style.display = 'block';
-                return;
-            }
-
             // Visual loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span>Sending Message...</span>';
@@ -170,16 +161,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // Create FormData object to send
             const formData = new FormData(contactForm);
             
-            // Post data to Web3Forms API
-            fetch('https://api.web3forms.com/submit', {
+            // Post data to FormSubmit API (AJAX mode)
+            fetch('https://formsubmit.co/ajax/surajkhuntia686@gmail.com', {
                 method: 'POST',
                 body: formData
             })
             .then(async (response) => {
                 const resJson = await response.json();
-                if (response.status === 200) {
+                if (response.status === 200 || resJson.success === "true") {
                     // Success response feedback
-                    formFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully.`;
+                    formFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully. Please check your inbox to confirm/activate delivery if this is the first submission.`;
                     formFeedback.className = 'form-feedback success';
                     formFeedback.style.display = 'block';
                     contactForm.reset();
@@ -201,11 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;
                 
-                // Clear success feedback after 8 seconds
+                // Clear success feedback after 10 seconds
                 setTimeout(() => {
                     formFeedback.style.display = 'none';
                     formFeedback.className = 'form-feedback';
-                }, 8000);
+                }, 10000);
             });
         });
     }
