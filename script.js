@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Success response feedback
                     formFeedback.textContent = `Thank you, ${name}! Your inquiry has been sent successfully. Suraj will get back to you shortly.`;
                     formFeedback.className = 'form-feedback success';
+                    formFeedback.style.display = 'block';
                     
                     // Reset form fields
                     contactForm.reset();
@@ -164,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Error response feedback
                     formFeedback.textContent = 'Please fill out all required fields.';
                     formFeedback.className = 'form-feedback error';
+                    formFeedback.style.display = 'block';
                 }
                 
                 // Reset submit button state
