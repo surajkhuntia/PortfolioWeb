@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateActiveNav);
 
     // ==========================================================================
-    // Contact Form Mock Submission
+    // Contact Form Real Submission (Web3Forms)
     // ==========================================================================
     const contactForm = document.getElementById('contact-form');
     const formFeedback = document.getElementById('form-feedback');
@@ -141,33 +141,62 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
             
+            // Get form inputs for validation
+            const name = document.getElementById('form-name').value.trim();
+            const email = document.getElementById('form-email').value.trim();
+            const subject = document.getElementById('form-subject').value.trim();
+            const message = document.getElementById('form-message').value.trim();
+            
+            if (!name || !email || !subject || !message) {
+                formFeedback.textContent = 'Please fill out all required fields.';
+                formFeedback.className = 'form-feedback error';
+                formFeedback.style.display = 'block';
+                return;
+            }
+
+            // Check if Access Key is still the placeholder
+            const accessKeyInput = contactForm.querySelector('input[name="access_key"]');
+            if (accessKeyInput && accessKeyInput.value === 'YOUR_ACCESS_KEY_HERE') {
+                formFeedback.textContent = 'Setup Required: Please add your free Web3Forms access key to the input element in index.html.';
+                formFeedback.className = 'form-feedback error';
+                formFeedback.style.display = 'block';
+                return;
+            }
+
             // Visual loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span>Sending Message...</span>';
             
-            // Simulating API call latency
-            setTimeout(() => {
-                // Get form inputs
-                const name = document.getElementById('form-name').value.trim();
-                const email = document.getElementById('form-email').value.trim();
-                const subject = document.getElementById('form-subject').value.trim();
-                const message = document.getElementById('form-message').value.trim();
-                
-                if (name && email && subject && message) {
+            // Create FormData object to send
+            const formData = new FormData(contactForm);
+            
+            // Post data to Web3Forms API
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                const resJson = await response.json();
+                if (response.status === 200) {
                     // Success response feedback
-                    formFeedback.textContent = `Thank you, ${name}! Your inquiry has been sent successfully. Suraj will get back to you shortly.`;
+                    formFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully.`;
                     formFeedback.className = 'form-feedback success';
                     formFeedback.style.display = 'block';
-                    
-                    // Reset form fields
                     contactForm.reset();
                 } else {
-                    // Error response feedback
-                    formFeedback.textContent = 'Please fill out all required fields.';
+                    // API error response
+                    formFeedback.textContent = resJson.message || 'Something went wrong. Please try again.';
                     formFeedback.className = 'form-feedback error';
                     formFeedback.style.display = 'block';
                 }
-                
+            })
+            .catch((error) => {
+                console.error(error);
+                formFeedback.textContent = 'Could not connect to email server. Please check your network connection.';
+                formFeedback.className = 'form-feedback error';
+                formFeedback.style.display = 'block';
+            })
+            .finally(() => {
                 // Reset submit button state
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;
@@ -177,8 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     formFeedback.style.display = 'none';
                     formFeedback.className = 'form-feedback';
                 }, 8000);
-                
-            }, 1200);
+            });
         });
     }
 });
