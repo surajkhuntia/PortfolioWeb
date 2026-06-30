@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Suraj Khuntia - Aspiring IT Audit & Information Security Associate. MCA candidate with expertise in Cybersecurity, Spring Boot, Angular, and IAM.">
+    <meta name="keywords" content="Suraj Khuntia, IT Audit, Information Security, Cybersecurity, Portfolio, Resume, MCA, Java, Spring Boot, Angular, IAM, Burp Suite, Nmap">
+    <meta name="author" content="Suraj Khuntia">
+    <title>Suraj Khuntia | IT Audit & Information Security Associate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-shield">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                Suraj<span>Khuntia</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle visual theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#journey" class="mobile-nav-link">Journey</a>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="grid-container">
+                <div class="hero-content">
+                    <span class="hero-badge">IT Audit & Cybersecurity Professional</span>
+                    <h1 class="hero-title">Aspiring to Secure and Audit Next-Gen Enterprise Environments</h1>
+                    <p class="hero-description">
+                        Hi, I'm <strong>Suraj Khuntia</strong>. Currently pursuing my MCA, I combine deep technical foundations in software engineering (Spring Boot, Angular, Databases) with a dedicated focus on identity and access management (IAM), vulnerability assessment, and IT general controls (ITGC).
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Bhubaneswar, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <a href="https://linkedin.com/in/suraj-khuntia" target="_blank" rel="noopener">linkedin.com/in/suraj-khuntia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="cyber-shield-container">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring ring-2"></div>
+                        <div class="pulse-ring ring-3"></div>
+                        <div class="cyber-shield">
+                            <img src="photo.jpg" alt="Suraj Khuntia" class="hero-photo">
+                        </div>
+                        <!-- Decorative nodes -->
+                        <div class="cyber-node node-1" data-label="IAM"></div>
+                        <div class="cyber-node node-2" data-label="ITGC"></div>
+                        <div class="cyber-node node-3" data-label="RBAC"></div>
+                        <div class="cyber-node node-4" data-label="LOGS"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Strengths Section -->
+        <section id="about" class="section section-about reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Profile Summary</span>
+                    <h2 class="section-title">Professional Focus & Core Strengths</h2>
+                    <p class="section-subtitle">A synthesis of application-level control design and meticulous compliance mindset.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-card card">
+                        <div class="card-glow"></div>
+                        <h3>The Cybersecurity & IT Audit Nexus</h3>
+                        <p>
+                            Aspiring Information Security and IT Audit professional currently pursuing an MCA. My background couples hands-on software development with modern risk assurance principles. I have designed and implemented production-grade authentication setups, role-based access controls (RBAC), password encryption architectures, and immutable audit logs within Java & Spring Boot backends.
+                        </p>
+                        <p>
+                            With a solid foundation in IT General Controls (ITGC) concepts, I pay close attention to code-level implementations and regulatory requirements. I am eager to apply these skills toward controls testing, audit support, and information security assurance in fast-paced financial technology environments.
+                        </p>
+                        <div class="languages-badge-container">
+                            <span class="lang-title">Languages Known:</span>
+                            <span class="badge">English</span>
+                            <span class="badge">Hindi</span>
+                            <span class="badge">Odia</span>
+                        </div>
+                    </div>
+
+                    <div class="strengths-column">
+                        <div class="strength-card card">
+                            <div class="strength-icon icon-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+                            </div>
+                            <div class="strength-content">
+                                <h4>Attention to Detail</h4>
+                                <p>Methodical approach to identifying system design inconsistencies, invaluable for controls testing and rigorous audit documentation.</p>
+                            </div>
+                        </div>
+
+                        <div class="strength-card card">
+                            <div class="strength-icon icon-comm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="strength-content">
+                                <h4>Communication & Presentation</h4>
+                                <p>Comfortable translating complex technical mechanics and architecture vulnerabilities into clear, structured reports.</p>
+                            </div>
+                        </div>
+
+                        <div class="strength-card card">
+                            <div class="strength-icon icon-learn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div class="strength-content">
+                                <h4>Quick Learner & Adaptable</h4>
+                                <p>Proven capacity to quickly absorb novel security frameworks, changing compliance guidelines, and complex enterprise software architectures.</p>
+                            </div>
+                        </div>
+
+                        <div class="strength-card card">
+                            <div class="strength-icon icon-team">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="strength-content">
+                                <h4>Team Collaboration</h4>
+                                <p>A positive, proactive team contributor who excels in cross-functional squads bridging IT, security, and risk compliance business units.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section section-skills reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">Technical Capabilities & Tools</h2>
+                    <p class="section-subtitle">Proficiencies span custom secure application design, compliance auditing tools, and relational database systems.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+                            </div>
+                            <h3>Security, Controls & IAM</h3>
+                        </div>
+                        <div class="skill-chips">
+                            <span class="skill-chip highlight">Identity & Access Management (IAM)</span>
+                            <span class="skill-chip highlight">Role-Based Access Control (RBAC)</span>
+                            <span class="skill-chip highlight">Audit Logging & Event Tracking</span>
+                            <span class="skill-chip highlight">JWT Authentication</span>
+                            <span class="skill-chip">IT General Controls (ITGC)</span>
+                            <span class="skill-chip">Nmap</span>
+                            <span class="skill-chip">Burp Suite</span>
+                            <span class="skill-chip">SQLMap</span>
+                            <span class="skill-chip">John the Ripper</span>
+                            <span class="skill-chip">Subfinder</span>
+                            <span class="skill-chip">XSS Testing</span>
+                            <span class="skill-chip">Password Encryption</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            </div>
+                            <h3>Frameworks & Web Tech</h3>
+                        </div>
+                        <div class="skill-chips">
+                            <span class="skill-chip highlight">Spring Boot</span>
+                            <span class="skill-chip highlight">Spring Security</span>
+                            <span class="skill-chip highlight">Angular</span>
+                            <span class="skill-chip">REST APIs</span>
+                            <span class="skill-chip">Swagger</span>
+                            <span class="skill-chip">HTML5 & CSS3</span>
+                            <span class="skill-chip">JavaScript (ES6+)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <h3>Languages & Databases</h3>
+                        </div>
+                        <div class="skill-chips">
+                            <span class="skill-chip highlight">Java</span>
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">C / C++</span>
+                            <span class="skill-chip highlight">PostgreSQL</span>
+                            <span class="skill-chip">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-projects reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Key Projects</h2>
+                    <p class="section-subtitle">Real-world systems representing security-by-design principles and control implementations.</p>
+                </div>
+
+                <div class="projects-container">
+                    <!-- Featured Project -->
+                    <div class="project-card featured card">
+                        <div class="project-header">
+                            <div class="project-badge">Featured Development Project</div>
+                            <h3>Cyber Secure Employee Portal</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                Designed and built an enterprise employee portal implementing a rigid security-by-design paradigm. The system manages core operations like leaves and document uploads, backed by a robust and fully compliant access control layer.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>Access Controls:</strong> Implemented JWT-based authentication coupled with granular Role-Based Access Control (RBAC).</li>
+                                <li><strong>Data Privacy:</strong> Built an integrated AI-driven PII (Personally Identifiable Information) detection algorithm with automated metadata redaction.</li>
+                                <li><strong>Controls Assurance:</strong> Built automated, tamper-resistant system audit logs and login-event trackers designed specifically to mirror real-world ITGC requirements.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">Java 17</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Spring Security</span>
+                                <span class="tag">JWT</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">Swagger</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic/Internship Projects -->
+                    <div class="project-card card">
+                        <div class="project-header">
+                            <div class="project-badge">Academic & Internship Projects</div>
+                            <h3>Database Systems & CRUD Intern Projects</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                Developed dynamic database-driven applications during a technical internship. Created object-relational mapping patterns, implemented normalized database schemas, and structured secure CRUD operations on core web platforms.
+                            </p>
+                            <ul class="project-features">
+                                <li>Structured relational databases with indices for optimized search and query throughput.</li>
+                                <li>Enforced data sanitization and parameterized inputs to protect endpoints against SQL Injection vulnerabilities.</li>
+                                <li>Deployed clean REST structures with documented endpoints for testing and verification.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">CRUD</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="journey" class="section section-journey reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Timeline</span>
+                    <h2 class="section-title">Education & Credentials</h2>
+                    <p class="section-subtitle">Academic foundations, formal certifications, and corporate job simulations.</p>
+                </div>
+
+                <div class="timeline-tabs-container">
+                    <div class="timeline-tabs" role="tablist">
+                        <button id="tab-cert" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-cert">
+                            Certifications & Simulations
+                        </button>
+                        <button id="tab-edu" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-edu">
+                            Education
+                        </button>
+                    </div>
+
+                    <!-- Panel: Certifications -->
+                    <div id="panel-cert" class="tab-panel active" role="tabpanel" aria-labelledby="tab-cert">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Current / Recent</span>
+                                    <h3>Google Cybersecurity Certificate</h3>
+                                    <span class="timeline-org">Google (Professional Credential)</span>
+                                    <p>Comprehensive training covering information security principles, network security concepts, vulnerability identification, risk management, and incident response practices mapping to standard IT control audits.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Jan – Apr 2026</span>
+                                    <h3>Cloud Computing Certification (Elite Badge)</h3>
+                                    <span class="timeline-org">NPTEL – IIT Kharagpur</span>
+                                    <p>Completed a structured 12-week core computer science syllabus covering virtualization, cloud service architectures, security policies, and storage resource managers. Achieved a consolidated score of 63%.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h3>Cybersecurity Analyst Job Simulation</h3>
+                                    <span class="timeline-org">Tata Group (via Forage)</span>
+                                    <p>Executed tasks modeling the responsibilities of an IAM specialist: analyzing access controls, strategy assessment, design of robust custom directory integrations, and directory mapping.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h3>Cybersecurity Job Simulation</h3>
+                                    <span class="timeline-org">Deloitte (via Forage)</span>
+                                    <p>Simulated professional security consultation tasks focusing on vulnerability assessment reporting, cloud environment architecture reviews, and identity control analysis following Deloitte's risk guidelines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel: Education -->
+                    <div id="panel-edu" class="tab-panel" role="tabpanel" aria-labelledby="tab-edu">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2025 – 2027</span>
+                                    <h3>Master of Computer Applications (MCA)</h3>
+                                    <span class="timeline-org">Srusti Academy of Management and Technology – Bhubaneswar</span>
+                                    <p>Advanced studies in system architectures, software engineering, databases, algorithms, and application-level network security controls.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h3>B.Sc., Zoology</h3>
+                                    <span class="timeline-org">Govindpur Degree College – Cuttack</span>
+                                    <p>Scientific curriculum training in analytical observation, structured methodology, and technical reporting.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Graduated 2022</span>
+                                    <h3>12th Class, Science</h3>
+                                    <span class="timeline-org">Sudarsan Higher Secondary, 42 Mouza – Cuttack</span>
+                                    <p>Higher secondary education with a science specialization focusing on Mathematics and Physics foundations.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h3>10th Class</h3>
+                                    <span class="timeline-org">S A I I E, Kalapada – Cuttack</span>
+                                    <p>Secondary education board curriculum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Reach out for roles in IT Audit, Information Security Assurance, or collaboration opportunities.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to connect with me via email, phone, or LinkedIn. I am based in Bhubaneswar and open to local and remote opportunities.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <span>Email Me</span>
+                                    <a href="mailto:surajkhuntia686@gmail.com" class="info-link">surajkhuntia686@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <span>Call Me</span>
+                                    <a href="tel:+917008245849" class="info-link">+91 7008245849</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <span>Professional Network</span>
+                                    <a href="https://linkedin.com/in/suraj-khuntia" target="_blank" rel="noopener" class="info-link">linkedin.com/in/suraj-khuntia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" autocomplete="on">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Inquiry regarding IT Audit roles" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Suraj Khuntia. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/suraj-khuntia" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:surajkhuntia686@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
